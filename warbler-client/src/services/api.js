@@ -8,9 +8,6 @@ export function setTokenHeader(token) {
   }
 }
 
-// @param { string } method
-// @param { string } path
-// @param { object } data
 
 export function apiCall(method, path, data) {
   return new Promise((resolve, reject) => {
