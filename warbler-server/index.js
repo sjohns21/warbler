@@ -7,8 +7,9 @@ const errorHandler = require("./handlers/error");
 const authRoutes = require("./routes/auth");
 const messagesRoutes = require("./routes/messages");
 const { loginRequired, ensureCorrectUser } = require('./middleware/auth')
-
+const db = require("./models");
 const PORT = 8081;
+
 app.use(cors());
 app.use(bodyParser.json());
 
